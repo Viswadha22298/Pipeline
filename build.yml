@@ -1,10 +1,10 @@
 trigger:
 - main
 pool:
-  name: agent-pool-name
+  name: Test
   demands: Agent.Name -equals YourAgentName
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'pom.xml’
+    mavenPomFile: 'pom.xml'
     goals: 'package'
